@@ -1,13 +1,19 @@
 import React from "react";
-
+import Link from "next/link";
 const header = () => {
   return (
-    <div className="flex ">
-      <p>home</p>
+    <div className="flex space-between">
+      <Link href="/">
+        <p>home</p>
+      </Link>
       <nav className="flex">
-        <p>todolist</p>
+        <Link href="/todolist">
+          <p>todolist</p>
+        </Link>
 
-        <p>new-todo</p>
+        <Link href="/new-todo">
+          <p>new-todo</p>
+        </Link>
       </nav>
     </div>
   );
